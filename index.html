@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fraunces">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; border: 0px; margin-top: 100px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color: hsl(30, 38%, 92%);
+    }
+    h2 {
+      font-family: 'Fraunces';
+      font-weight: 700;
+    }
+    p {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+    .center {
+      display: grid;
+      grid-row-gap: 0px;
+      width: 90vw;
+      height: 90vh;
+    }
+    .item2 {
+      background-color: hsl(0, 0%, 100%);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .description {
+      border: 0px;
+      padding: 20px;
+    }
+    .price-tag {
+      display: flex;
+      border: 0px;
+    }
+    .canceledtag {
+      text-decoration: line-through;
+      border: 0px;
+      margin-left: 15px;
+      margin-top: 25px;
+    }
+    .addbtn {
+      background-color: hsl(158, 36%, 37%);
+      border: 0px hsl(158, 36%, 37%);
+      color: hsl(0, 0%, 100%);
+      width: 75vw;
+      height: 40px;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+    }
+    .hero {
+      display: none;
+    }
+    .mobilehero {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 90vw;
+      height: 40vh;
+    }
+    .desktop {
+      display: none;
+    }
+    .addbtn:hover {
+      background-color: hsl(158, 36%, 20%);;
+    }
+    @media (min-width: 640px) {
+      .center {
+        display: grid;
+        grid-template-columns: 250px 260px;
+        margin: 150px;
+        width: auto;
+        height: auto;
+      }
+      .mobile {
+        display: none;
+      }
+      .desktop {
+        display: block;
+      }
+      .hero {
+        display: block;
+      }
+      .mobilehero {
+        display: none;
+      }
+      .addbtn {
+        width: 200px;
+      }
+      .item2 {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+      }
+      .hero {
+        width: 250px;
+        height: 400px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        margin-top: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="themain">
+    <div class="flex">
+      <div class="center">
+        <div class="griditem item1">
+          <div class="flex">
+            <img src="./images/image-product-desktop.jpg" class="hero" alt="desktop product image">
+            <img src="./images/image-product-mobile.jpg" class="mobilehero" alt="mobile product image">
+          </div>
+        </div>
+        <div class="griditem item2">
+          <div class="description">
+            <p>PERFUME</p>
+            <h2 class="desktop">Gabrielle<br>Essence Eau<br> De Parfum</h2>
+            <h2 class="mobile">Gabrielle Essence<br>Eau De Parfum</h2>
+            <p class="desktop">A floral, solar and voluptuous<br>interpretation composed by<br>Olivier Polge, 
+              Perfumer-Creator<br>for the House of CHANEL.</p>
+            <p class="mobile">A floral, solar and voluptuous<br>interpretation composed by Olivier<br>Polge, 
+              Perfumer-Creator for the House of<br>CHANEL.</p>
+            <div class="price">
+              <div class="price-tag">
+                <h2 style="color: hsl(158, 36%, 37%);">$149.99</h2>
+                <p class="canceledtag">$169.99</p>
+              </div>
+            </div>
+            <div class="cart">
+              <button type="button" class="addbtn"><img src="./images/icon-cart.svg" alt="icon cart image"> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ProfEmmy">ProfEmmy</a>.
+  </footer>
+</body>
+</html>
