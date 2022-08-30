@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Red Hat Display">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 40px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-image: url("./images/pattern-background-mobile.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: hsl(225, 100%, 94%);
+    }
+    .div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .center {
+      border: 0px;
+      margin: 50px;
+      background-color: white;
+      border-radius: 20px;
+      text-align: center;
+      display: grid;
+    }
+    .hero {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .icons {
+      text-align: center;
+    }
+    .container {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(225, 100%, 98%);
+      border: 0px;
+      border-radius: 16px;
+      margin-left: 80px;
+      margin-right: 50px;
+    }
+    .item2 {
+      border: 0px;
+      margin-left: 10px;
+    }
+    .music-icon {
+      border: 0px;
+      margin-right: 60x;
+    }
+    .price {
+      border: 0px;
+      margin-right: 60px;
+    }
+    .item3{
+      border: 0px;
+      margin-left: 30px;
+    }
+    .proceed-button {
+      margin-top: 50px;
+    }
+    button {
+      width: 300px;
+      height: 40px;
+    }
+    .proceed {
+      border: 0px hsl(245, 75%, 52%);
+      border-radius: 10px;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+    }
+    .proceed:hover {
+      background-color: hsl(224, 23%, 55%);
+      color: white;
+    }
+    p {
+      font-weight: 500;
+      font-size: 16px;
+    }
+    h2 {
+      font-family: 'Red Hat Display';
+    }
+    .change:hover {
+      text-decoration: none;
+      color: hsl(224, 23%, 55%);;
+    }
+    .cancel-order:hover {
+      font-weight: 600;
+    }
+
+
+    @media (max-width: 375px) {
+      .themain {
+        background-image: ("./images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+        margin: 0px;
+      }
+      .center{
+        font-size: 375px;
+      }
+    }
+
+
+
+  </style>
+</head>
+<body>
+    <main class="themain">
+      <div class="div">
+        <div class="center">
+          <div class="item center-image">
+            <img src="images/illustration-hero.svg" class="hero" alt="illustration-hero">
+          </div>
+          <div class="item description">
+            <h2>Order Summary</h2>
+            <p class="describe">You can now listen to millions of songs,<br> audiobooks, and podcasts on any 
+              device<br> anywhere you like!</p>
+          </div>
+          <div class="icons">
+            <div class="container">
+              <div class = "item1">
+                <img class="music-icon" src="images/icon-music.svg" alt="music-icon">
+              </div>
+              <div class="item2">
+                <p class="price"><b>Annual Plan</b><br>$59.99/year</p> 
+              </div>
+              <div class="item3">
+                <a href="" class="change">Change</a>
+              </div>
+            </div>
+          </div>
+          <div class="proceed-button">
+            <button type="button" class="proceed">Proceed to Payment</button>
+          </div>
+          <div class="cancel">
+            <p class="cancel-order">Cancel Order</p>
+          </div>
+        </div>
+      </div>
+      <!--<img src="C:\Users\FAITH\Desktop\Order Summary Component\images\pattern-background-desktop.svg">-->
+    </main>
+    <footer class="foot">
+      <div class="attribution">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/ProfEmmy">ProfEmmy</a></p>
+      </div>
+    </footer>
+</body>
+</html>
